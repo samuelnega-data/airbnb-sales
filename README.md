@@ -5,7 +5,6 @@ I conducted an in-depth analysis of Airbnb data, exploring various columns such 
 
 ### Importing libraries  
 ```pyt
--- Total cases in the world vs total deaths in the world
 import pandas as pd 
 import seaborn as sb
 import numpy as np
