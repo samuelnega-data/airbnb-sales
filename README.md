@@ -70,4 +70,4 @@ sb.heatmap(data=corr.corr(), annot=True, cmap='coolwarm')
 plt.title("Correlation Map")
 ```
 ### Take Aways
-![Image Alt](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204128.png?raw=true)
+![Price Distribution](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204128.png?raw=true)
