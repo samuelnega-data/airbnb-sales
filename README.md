@@ -70,4 +70,5 @@ sb.heatmap(data=corr.corr(), annot=True, cmap='coolwarm')
 plt.title("Correlation Map")
 ```
 ### Take Aways
+This is the adjusted price distribution after removing 0.1% of the dataset, which included duplicates and outliers, resulting in a more refined price distribution.
 ![Price Distribution](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204128.png?raw=true)
