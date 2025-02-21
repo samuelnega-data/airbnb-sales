@@ -92,4 +92,4 @@ The scatter plot below shows the average price of Airbnb listings based on revie
 
 ## Room Distribution Based on Geographical Location
 I used latitude and longitude to visualize the distribution of room types based on location. The analysis shows that most Airbnbs are concentrated in Manhattan and Brooklyn. Notably, Airbnbs in Manhattan generate the highest revenue. From an investment perspective, someone looking to own Airbnbs should consider focusing on properties in these two areas.
-![Scatter Plot Map](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204128.png?raw=true)
+![Scatter Plot Map](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204502.png?raw=true)
