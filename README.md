@@ -97,4 +97,4 @@ I used latitude and longitude to visualize the distribution of room types based 
 
 ## Correlation Map (Heat Map)
 I created a correlation map to analyze relationships between various factors affecting Airbnb listing prices. One key insight from this analysis is the negative correlation between the number of reviews and price per bed.
-![Scatter Plot Map](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204502.png?raw=true)
+![Correlation Map](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204514.png?raw=true)
