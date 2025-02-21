@@ -71,4 +71,19 @@ plt.title("Correlation Map")
 ```
 ## Take Aways
 This is the adjusted price distribution after removing 0.1% of the dataset, which included duplicates and outliers, resulting in a more refined price distribution.
-![](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204128.png?raw=true)
+![Price Distribution](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204128.png?raw=true)
+
+This is the adjusted number of reviews distribution after removing 0.1% of the dataset, which included duplicates and outliers, resulting in a more refined price distribution.
+![Reviews Distribution](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204224.png?raw=true) 
+
+The top-performing cities in terms of Airbnb prices are Brooklyn and Manhattan, while the lowest-performing cities are the Bronx and Staten Island. The second includes the room type along with the neighbourhood for a more indepth analysis.
+![Average Price Based on Neighbourhood](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204310.png?raw=true)
+![Average Price Based on Neighbourhood and Room Type](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204342.png?raw=true
+)
+
+The scatter plot below shows the average price of Airbnb listings based on reviews and neighborhood groups. It reveals that Manhattan receives the highest number of reviews but is priced lower compared to other neighborhoods. Interestingly, some Manhattan listings with fewer reviews are priced much higher. This could be valuable insight for new Airbnb hosts, suggesting they may want to focus on properties in Manhattan.
+![Scatter Plot](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204128.png?raw=true)
+![Scatter Plot](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204419.png?raw=true)
+
+I used latitude and longitude to visualize the distribution of room types based on location. The analysis shows that most Airbnbs are concentrated in Manhattan and Brooklyn. Notably, Airbnbs in Manhattan generate the highest revenue. From an investment perspective, someone looking to own Airbnbs should consider focusing on properties in these two areas.
+![Scatter Plot Map](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204128.png?raw=true)
