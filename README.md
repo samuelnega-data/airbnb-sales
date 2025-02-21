@@ -20,3 +20,53 @@ df.info()
 df.describe()
 df.isnull().sum()
 ```
+### Transforming DataSet 
+I imported the necessary libraries, including pandas, seaborn, numpy, and matplotlib, to facilitate data analysis and visualization.
+```pyt
+df.duplicated().sum()
+df.drop_duplicates(inplace=True)
+df.duplicated().sum()
+df.head(2)
+```
+### EDA - Univariate Analysis
+I imported the necessary libraries, including pandas, seaborn, numpy, and matplotlib, to facilitate data analysis and visualization.
+```pyt
+sb.boxplot(data=df, x='price')
+dff = df[df['price'] < 1500]
+print(dff)
+sb.histplot(data=dff, x='price')
+plt.title('Price Distribution')
+sns.boxplot(data=dff, x='price')
+sb.boxplot(data=dff, x='price')
+sb.histplot(data=dff, x='price')
+plt.ylabel('Frequency')
+plt.title('Price Distribution')
+dff.columns
+sb.boxplot(data=dff, x='number_of_reviews')
+sb.boxplot(data=dff, x='number_of_reviews_ltm')
+dfn = df[df['number_of_reviews_ltm'] < 100]
+print(dff)
+sb.histplot(data=dfn, x='number_of_reviews_ltm')
+dff.head(4)
+dff.groupby('neighbourhood_group')['price'].mean()
+dff.info()
+dff['price per bed']=dff['price']/dff['beds']
+dff.head()
+dff.groupby('neighbourhood_group')['price per bed'].mean()
+dff.columns
+sb.barplot(data=dff, x='neighbourhood_group', y='price')
+```
+### EDA - Bivariate Analysis
+I imported the necessary libraries, including pandas, seaborn, numpy, and matplotlib, to facilitate data analysis and visualization.
+```pyt
+sb.barplot(data=dff, x='neighbourhood_group', y='price', hue='room_type')
+sb.scatterplot (data=dff, x='number_of_reviews', y='price', hue='neighbourhood_group')
+plt.title('Number of Reviews vs Price vs Neighborhood')
+dff.dtypes
+sb.pairplot(data=dff, vars=['price', 'minimum_nights', 'number_of_reviews', 'availability_365'], hue='room_type')
+sb.scatterplot(data=dff, x='latitude', y='longitude', hue='neighbourhood_group')
+sb.scatterplot(data=dff, x='latitude', y='longitude', hue='room_type')
+corr = dff[['latitude', 'longitude', 'price','minimum_nights', 'number_of_reviews', 'reviews_per_month', 'availability_365', 'price per bed']]
+sb.heatmap(data=corr.corr(), annot=True, cmap='coolwarm')
+plt.title("Correlation Map")
+```
