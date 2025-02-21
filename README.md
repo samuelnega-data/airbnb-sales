@@ -3,7 +3,7 @@
 ## Overview
 I conducted an in-depth analysis of Airbnb data, exploring various columns such as neighborhoods, prices, room types, and bed configurations. Using Python, I not only performed the analysis but also created insightful visualizations utilizing Seaborn and Matplotlib. Through this comprehensive examination, I uncovered several key insights, which I have presented in detail.
 
-### Importing libraries  
+## Importing libraries  
 I imported the necessary libraries, including pandas, seaborn, numpy, and matplotlib, to facilitate data analysis and visualization.
 ```pyt
 import pandas as pd 
@@ -11,7 +11,7 @@ import seaborn as sb
 import numpy as np
 import matplotlib.pyplot as plt
 ```
-### Exploring Datasets 
+## Exploring Datasets 
 These script offers a quick overview of the dataset, including its size, structure, summary statistics, and missing values, helping in the initial exploration and understanding of the data.```pyt
 df.tail(2)
 df.shape
@@ -19,7 +19,7 @@ df.info()
 df.describe()
 df.isnull().sum()
 ```
-### Transforming DataSet 
+## Transforming DataSet 
 These script checks for and removes duplicate rows, then verifies the changes by displaying the first two rows. It helps clean the dataset, ensuring the analysis uses only unique entries.
 ```pyt
 df.duplicated().sum()
@@ -27,7 +27,7 @@ df.drop_duplicates(inplace=True)
 df.duplicated().sum()
 df.head(2)
 ```
-### EDA - Univariate Analysis
+## EDA - Univariate Analysis
 This analysis explores the 'price' and 'number_of_reviews' features, filtering extreme values and visualizing their distributions. It also calculates the average price and price per bed by neighborhood group, helping to identify patterns and outliers.
 ```pyt
 sb.boxplot(data=df, x='price')
@@ -55,7 +55,7 @@ dff.groupby('neighbourhood_group')['price per bed'].mean()
 dff.columns
 sb.barplot(data=dff, x='neighbourhood_group', y='price')
 ```
-### EDA - Bivariate Analysis
+## EDA - Bivariate Analysis
 In this bivariate analysis, you examine relationships between variables like price, room type, neighborhood, and reviews using bar plots, scatter plots, and pair plots. You also explore geographical distributions by latitude and longitude and analyze correlations between key variables with a heatmap. This helps uncover patterns and relationships within the data for deeper insights.
 ```pyt
 sb.barplot(data=dff, x='neighbourhood_group', y='price', hue='room_type')
@@ -69,6 +69,6 @@ corr = dff[['latitude', 'longitude', 'price','minimum_nights', 'number_of_review
 sb.heatmap(data=corr.corr(), annot=True, cmap='coolwarm')
 plt.title("Correlation Map")
 ```
-### Take Aways
+## Take Aways
 This is the adjusted price distribution after removing 0.1% of the dataset, which included duplicates and outliers, resulting in a more refined price distribution.
-![Price Distribution](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204128.png?raw=true)
+![](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204128.png?raw=true)
