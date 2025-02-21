@@ -12,8 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 ### Exploring Datasets 
-This script provides an overview of the dataset by displaying the last two rows (tail(2)), showing its dimensions (shape), summarizing its structure (info()), generating basic statistical details (describe()), and checking for missing values (isnull().sum()). It is beneficial for quickly understanding the dataset's size, structure, summary statistics, and completeness, aiding in the initial data exploration phase.
-```pyt
+These script offers a quick overview of the dataset, including its size, structure, summary statistics, and missing values, helping in the initial exploration and understanding of the data.```pyt
 df.tail(2)
 df.shape
 df.info()
@@ -21,7 +20,7 @@ df.describe()
 df.isnull().sum()
 ```
 ### Transforming DataSet 
-This script checks for duplicate rows in the dataset (duplicated().sum()), removes the duplicates (drop_duplicates(inplace=True)), and then rechecks the number of duplicates after removal. Finally, it displays the first two rows (head(2)) to verify the changes. This process helps in cleaning the dataset by eliminating redundant data, ensuring the analysis is based on unique entries.
+These script checks for and removes duplicate rows, then verifies the changes by displaying the first two rows. It helps clean the dataset, ensuring the analysis uses only unique entries.
 ```pyt
 df.duplicated().sum()
 df.drop_duplicates(inplace=True)
@@ -29,7 +28,8 @@ df.duplicated().sum()
 df.head(2)
 ```
 ### EDA - Univariate Analysis
-This analysis focuses on univariate exploration of the 'price' and 'number_of_reviews' features, filtering out extreme values and visualizing their distributions with boxplots and histograms. You compute the average price and price per bed by neighborhood group, and visualize these insights with bar plots, helping to identify patterns and outliers in the data.```pyt
+This analysis explores the 'price' and 'number_of_reviews' features, filtering extreme values and visualizing their distributions. It also calculates the average price and price per bed by neighborhood group, helping to identify patterns and outliers.
+```pyt
 sb.boxplot(data=df, x='price')
 dff = df[df['price'] < 1500]
 print(dff)
@@ -69,3 +69,4 @@ corr = dff[['latitude', 'longitude', 'price','minimum_nights', 'number_of_review
 sb.heatmap(data=corr.corr(), annot=True, cmap='coolwarm')
 plt.title("Correlation Map")
 ```
+### Take Aways
