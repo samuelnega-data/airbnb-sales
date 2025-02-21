@@ -88,6 +88,7 @@ The top-performing cities in terms of Airbnb prices are Brooklyn and Manhattan, 
 ## Scatter Plot
 The scatter plot below shows the average price of Airbnb listings based on reviews and neighborhood groups. It reveals that Manhattan receives the highest number of reviews but is priced lower compared to other neighborhoods. Interestingly, some Manhattan listings with fewer reviews are priced much higher. This could be valuable insight for new Airbnb hosts, suggesting they may want to focus on properties in Manhattan.
 ![Scatter Plot](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204357.png?raw=true)
+
 ![Scatter Plot](https://github.com/samuelnega-data/airbnb/blob/main/Air%20Bnb%20Data%20Visualization/Screenshot%202025-02-20%20204419.png?raw=true)
 
 ## Room Distribution Based on Geographical Location
